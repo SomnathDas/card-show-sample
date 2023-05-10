@@ -1,0 +1,9 @@
+.card-section {
+  padding: 40px;
+}
+
+@media screen and (max-width: 1060px) {
+  .card-section {
+    padding: 12px;
+  }
+}

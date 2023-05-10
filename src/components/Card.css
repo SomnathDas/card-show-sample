@@ -1,0 +1,107 @@
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.card-container h1 {
+  font-family: serif;
+  font-weight: lighter;
+  font-size: 3rem;
+}
+
+.card-container p {
+  font-family: serif;
+  font-size: 1.25rem;
+  width: 480px;
+  color: #565e64;
+}
+
+.card-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-link {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+  font-family: serif;
+
+  display: flex;
+  gap: 16px;
+}
+
+.arrow {
+  width: 30px;
+  animation: fadeIn 600ms infinite alternate-reverse;
+  animation-play-state: paused;
+}
+
+.card-link:hover {
+  color: rgb(90, 85, 85);
+}
+
+.card-link:hover .arrow {
+  animation-play-state: running;
+}
+
+.card-image {
+  width: 500px;
+  height: 300px;
+}
+
+.head-secondary {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateX(20px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .card-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .card-container p {
+    width: 550px;
+    padding: 1rem;
+  }
+
+  .card-left {
+    gap: 2rem;
+  }
+
+  .head-secondary {
+    display: block;
+  }
+
+  .head-primary {
+    display: none;
+  }
+
+  .card-link {
+    color: blue;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-image {
+    height: auto;
+    width: 100%;
+  }
+
+  .card-container p {
+    width: auto;
+  }
+}
