@@ -1,33 +1,38 @@
 import "./App.css";
 import Card from "./components/Card";
 
+import img1 from "./assets/rp1.jpg";
+import img2 from "./assets/rp2.png";
+import img3 from "./assets/rp3.jpg";
+import img4 from "./assets/rp4.jpg";
+
 const App = () => {
   const CardObject = {
     firstCard: {
       head: "AI + RPA is what we do",
       body: "Future-Proof your business. Drive efficiency, profitability and deliver on customer experience",
-      image: "src/assets/rp1.jpg",
+      image: { img1 },
       linkObj: { link: "", title: "AI + RPA Automation" },
     },
 
     secondCard: {
       head: "Make Bolder Choices",
       body: "Digital focused strategies to realize market-changing ideas",
-      image: "src/assets/rp2.png",
+      image: { img2 },
       linkObj: { link: "", title: "Build Better Apps" },
     },
 
     thirdCard: {
       head: "Innovate with Speed",
       body: "Create higher quality software, deliver on customer expectations and business goals",
-      image: "src/assets/rp3.jpg",
+      image: { img3 },
       linkObj: { link: "", title: "DevOps" },
     },
 
     fourthCard: {
       head: "Embrace Cloud",
       body: "With Cloud-First accelerate innovation and optimize performance",
-      image: "src/assets/rp4.jpg",
+      image: { img4 },
       linkObj: { link: "", title: "Cloud Services" },
     },
   };
