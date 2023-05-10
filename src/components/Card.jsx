@@ -1,4 +1,5 @@
 import "./Card.css";
+import arrowImg from "../assets/arrow.svg";
 
 const Card = ({ head, body, image, linkObj }) => {
   return (
@@ -10,7 +11,7 @@ const Card = ({ head, body, image, linkObj }) => {
         </div>
         <a className="card-link" href={linkObj.link}>
           {linkObj.title}
-          <img src="src/assets/arrow.svg" alt="arrow" className="arrow" />
+          <img src={arrowImg} alt="arrow" className="arrow" />
         </a>
       </div>
       <div className="card-right">
